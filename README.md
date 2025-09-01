@@ -52,7 +52,7 @@ pm2 start server.js --name myapp
 pm2 save
 pm2 startup
 ```
-Frontend (Next.js without custom server)
+Frontend (Next.js without custom server) <br />
 Note: If your Next.js app does not use a custom server, run it using npm start instead of server.js:
 ```bash
 pm2 start npm --name "frontend" -- start
