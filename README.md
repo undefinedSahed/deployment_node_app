@@ -5,7 +5,7 @@ This guide provides step-by-step instructions to deploy Node.js or MERN applicat
 ## 1. Connect to VPS
 ```bash
 ssh root@your_vps_ip
-type ypur password
+type your password
 ```
 
 ## 2. Update & Upgrade Packages
