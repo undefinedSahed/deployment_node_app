@@ -57,9 +57,11 @@ Note: If your Next.js app does not use a custom server, run it using npm start i
 ```bash
 pm2 start npm --name "frontend" -- start
 ```
-Default port: 3000
+Default port: 3000 <br />
 Optional clustering for high traffic:
+```bash
 pm2 start npm --name "frontend" -- start -- -p 3000 -i max
+```
 
 ## 8. Setup NGINX Reverse Proxy
 ```bash
@@ -139,22 +141,26 @@ pm2 restart myapp
 ```
 
 ## 13. Final Checklist
+```bash
 Node.js installed & app running under PM2
 
- NGINX reverse proxy configured
+NGINX reverse proxy configured
 
- SSL enabled with Let’s Encrypt
+SSL enabled with Let’s Encrypt
 
- Firewall enabled
+Firewall enabled
 
- Logs & monitoring active
+Logs & monitoring active
 
- Performance optimizations applied (gzip, caching, clustering)
+Performance optimizations applied (gzip, caching, clustering)
+```
 
 Notes:
 
+```bash
 This guide works for MERN stack apps, backend APIs (Express/Node.js), and frontend apps (Next.js without custom server).
 
 For Next.js frontend, using npm start is sufficient if no custom server is needed.
 
 For high traffic apps, consider PM2 cluster mode and NGINX caching.
+```
