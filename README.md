@@ -16,8 +16,9 @@ sudo apt install -y build-essential curl git ufw
 
 ## 3. Install Node.js (Latest LTS)
 ```bash
-curl -fsSL https://deb.nodesource.com/setup_lts.x | bash -
-sudo apt install -y nodejs
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+\. "$HOME/.nvm/nvm.sh"
+nvm install 22
 node -v
 npm -v
 ```
