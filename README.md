@@ -49,15 +49,11 @@ Add database URLs, API keys, secrets, and other environment variables.
 ## 7. Start Application with PM2
 Backend / Node.js
 ```bash
-pm2 start server.js --name myapp
+pm2 start npm --name myapp -- start
 pm2 save
 pm2 startup
 ```
-Frontend (Next.js without custom server) <br />
-Note: If your Next.js app does not use a custom server, run it using npm start instead of server.js:
-```bash
-pm2 start npm --name "frontend" -- start
-```
+
 Default port: 3000 <br />
 Optional clustering for high traffic:
 ```bash
